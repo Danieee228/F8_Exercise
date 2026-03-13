@@ -1,0 +1,147 @@
+:root {
+  --text-color-primary: #ffffffe6;
+  --text-color-secondary: #808b9a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  counter-reset: chapter;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+.container {
+  width: 450px;
+  max-width: 100%;
+  min-height: 100px;
+  background-color: #272a31;
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.top-chapter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #181d1e;
+  background-color: #272a31;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+.top-chapter i {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: var(--text-color-secondary);
+  margin-top: 4px;
+}
+
+.chapter-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.chapter-info h2 {
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--text-color-primary);
+  counter-increment: chapter;
+}
+
+.chapter-info h2::before {
+  content: counter(chapter) ". ";
+}
+
+.chapter-description {
+  display: flex;
+  gap: 4px;
+}
+
+.total-chapter,
+.duration-chapter {
+  color: var(--text-color-secondary);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.total-chapter::after {
+  content: "";
+  border-right: 1px solid var(--text-color-secondary);
+  padding-left: 4px;
+}
+
+.list-lesson {
+  display: flex;
+  flex-direction: column;
+  counter-reset: lesson;
+}
+
+.item-lesson {
+  flex: 1;
+  border-bottom: 1px solid #181d1e;
+}
+
+.lesson-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-out;
+}
+
+.lesson-link:hover,
+.top-chapter:hover {
+  background-color: #32353b;
+}
+
+.lesson-link i {
+  font-size: 1.6rem;
+  color: var(--text-color-secondary);
+}
+
+.lesson-descript {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.lesson-title {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--text-color-primary);
+  counter-increment: lesson;
+}
+
+.lesson-title::before {
+  content: counter(chapter) "." counter(lesson) " ";
+}
+
+.duration-lesson {
+  color: var(--text-color-secondary);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
