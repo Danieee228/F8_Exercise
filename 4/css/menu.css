@@ -1,0 +1,25 @@
+/* Ex-02 */
+
+.menu {
+  padding: 0 40px;
+  background-color: #3e5cca;
+  font-size: 0;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 30px 20px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.menu li a:hover {
+  background-color: #fff;
+  color: #000;
+}

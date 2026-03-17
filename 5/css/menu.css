@@ -1,0 +1,54 @@
+
+
+/* Ex-01 */
+
+.menu {
+  padding: 0 40px;
+  background-color: #3e5cca;
+  text-align: center;
+  font-size: 0;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 30px 30px;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.menu li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.menu li.active a {
+  background-color: #fff;
+  color: #000;
+}
+.menu li a:active {
+  background-color: #ccc;
+  color: #4a608d;
+}
+.menu li:last-child::after {
+  content: none;
+}
+
+.menu li::after {
+  vertical-align: middle;
+  content: "";
+  display: inline-block;
+  height: 80px;
+  border-left: 1px solid #000000;
+}
+
+.menu li a::before {
+  padding: 0 10px;
+  content: "\25B6";
+  font-size: 2rem;
+}

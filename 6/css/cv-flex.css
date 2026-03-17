@@ -1,0 +1,122 @@
+
+/* Ex-01 */
+.wrap-cv {
+  display: flex;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #fff;
+  min-height: 100vh;
+}
+
+.information {
+  flex: 0 0 300px;
+  border-right: 2px solid #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information img {
+  width: 250px;
+  height: 250px;
+  display: block;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.information .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.information .contact {
+  align-self: flex-start;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.information .contact a {
+  color: #000;
+  text-decoration: none;
+}
+
+.information .contact ul {
+  margin-bottom: 20px;
+}
+
+.information .contact li {
+  margin-bottom: 8px;
+}
+
+.career-goals {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.hobby {
+  align-self: flex-start;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.hobby ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.hobby li {
+  margin-bottom: 6px;
+}
+
+.form-cv {
+  background-color: #fff;
+  padding: 20px 40px;
+  flex-grow: 1;
+}
+.cv-section h2 {
+  font-size: 2rem;
+  line-height: 1.4;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #000;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.job-item {
+  margin-bottom: 20px;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.description-job ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.description-job li {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.education {
+  margin-bottom: 40px;
+  font-size: 1.4rem;
+}
+.education b {
+  font-weight: bold;
+}

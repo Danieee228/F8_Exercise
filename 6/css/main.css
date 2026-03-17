@@ -1,0 +1,25 @@
+.menu {
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.menu li {
+  margin-bottom: 20px;
+}
+
+.menu li a {
+  min-width: 200px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #fff;
+  background-color: #3e5cca;
+  border-radius: 8px;
+}
+
+.menu li a:hover {
+  background-color: #2d47a3;
+}

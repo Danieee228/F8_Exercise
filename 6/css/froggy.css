@@ -1,0 +1,30 @@
+
+
+/* ex-05 */
+.wrap-froggy {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+.pond {
+  margin-bottom: 20px;
+  background-color: #cecece;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.pond img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.pond p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}

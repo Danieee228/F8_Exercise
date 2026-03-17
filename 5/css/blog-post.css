@@ -1,0 +1,113 @@
+
+/* ex-04 */
+
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blog-header {
+  text-align: center;
+  margin: 36px 0;
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+  font-weight: bold;
+}
+
+.intro-img {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.blog-body {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.blog-body :is(h2, h3, h4):not(h1) {
+  color: #ce3a3a;
+}
+
+.blog-content p::first-line {
+  font-weight: bold;
+  color: #333;
+}
+
+.intro-text {
+  margin-bottom: 24px;
+}
+
+.intro-text::first-letter {
+  font-size: 5rem;
+  font-weight: bold;
+  float: left;
+  line-height: 0.8;
+  margin-right: 8px;
+}
+
+.content {
+  margin-bottom: 24px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 16px;
+  margin: 24px 0;
+  font-style: italic;
+  color: #555;
+}
+
+blockquote::before {
+  content: "“";
+  font-size: 3rem;
+  vertical-align: top;
+  color: #555;
+  margin-right: 8px;
+}
+.content h3 {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.comments-section {
+  margin-bottom: 36px;
+}
+.comments-list {
+  margin-top: 24px;
+}
+.comments-item {
+  margin-bottom: 16px;
+  background-color: #f9f9f9;
+  padding: 12px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.comments-item:nth-of-type(even) {
+  background-color: #dddddd;
+}
+
+.comments-item:hover {
+  background-color: #e6e6e6;
+}
+
+.comments-item img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 12px;
+}
+
+::selection {
+  background-color: #859dee;
+  color: #fff;
+}

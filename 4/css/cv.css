@@ -1,0 +1,82 @@
+
+/* Ex-01 */
+.form-cv {
+  background-color: #fff;
+  max-width: 900px;
+  min-height: 700px;
+  margin: 36px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-cv {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.header-cv h1 {
+  font-size: 26px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 48px;
+  margin-bottom: 6px;
+}
+
+.header-cv p {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.header-cv a {
+  color: #000;
+  text-decoration: none;
+}
+
+.content-cv {
+  margin: 0 80px;
+}
+
+.cv-section h2 {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #000;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.job-item {
+  margin-bottom: 20px;
+}
+
+.job-header {
+  display: flex;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.job-date {
+  margin-left: auto;
+}
+
+.description-job ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.description-job li {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.education {
+  margin-bottom: 40px;
+}
+.education b {
+  font-weight: bold;
+}
+
