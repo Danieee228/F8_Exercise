@@ -6,28 +6,98 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <title>Lesson 5 - Pseudo Classes & Elements</title>
+
     <link
       rel="stylesheet"
-      href="./css/reset.css"
+      href="../assets/css/reset.css"
     />
     <link
       rel="stylesheet"
-      href="./css/style.css"
+      href="../assets/css/base.css"
     />
-    <title>f8-fullstack-day5</title>
+    <link
+      rel="stylesheet"
+      href="../assets/css/index.css"
+    />
   </head>
   <body>
-    <ul class="menu">
-      <li>
-        <a href="./ex1-menu-enhanced/menu-enhanced.html">Menu Nâng cao</a>
-      </li>
-      <li>
-        <a href="./ex2-form-enhanced/form-enhanced.html">Form Nâng cao</a>
-      </li>
-      <li>
-        <a href="./ex3-pricing-table/pricing-table.html">Pricing Table</a>
-      </li>
-      <li><a href="./ex4-blog-post/blog-post.html">Blog Post</a></li>
-    </ul>
+    <div class="portfolio-container">
+      <div class="portfolio-header">
+        <h1>Lesson 05: Pseudo CSS</h1>
+        <p>Sức mạnh của Pseudo Classes & Pseudo Elements</p>
+      </div>
+
+      <ul class="exercise-list">
+        <li class="exercise-item">
+          <a
+            href="./ex1-menu-enhanced/menu-enhanced.html"
+            class="exercise-card"
+          >
+            <span class="lesson-number">Bài 01</span>
+            <h3 class="lesson-title">Menu Nâng cao</h3>
+            <p class="lesson-desc">
+              Ứng dụng Pseudo-classes và Pseudo-elements để tạo vạch ngăn cách,
+              thêm điểm nhấn và hiệu ứng hover mượt mà cho Menu.
+            </p>
+            <span class="action-text">Xem kết quả &rarr;</span>
+          </a>
+        </li>
+
+        <li class="exercise-item">
+          <a
+            href="./ex2-form-enhanced/form-enhanced.html"
+            class="exercise-card"
+          >
+            <span class="lesson-number">Bài 02</span>
+            <h3 class="lesson-title">Form Tương tác</h3>
+            <p class="lesson-desc">
+              Xử lý trạng thái focus, bắt lỗi invalid báo đỏ, và thêm dấu sao
+              (*) bắt buộc cho các trường nhập liệu bằng CSS thuần.
+            </p>
+            <span class="action-text">Xem kết quả &rarr;</span>
+          </a>
+        </li>
+
+        <li class="exercise-item">
+          <a
+            href="./ex3-pricing-table/pricing-table.html"
+            class="exercise-card"
+          >
+            <span class="lesson-number">Bài 03</span>
+            <h3 class="lesson-title">Bảng giá Dịch vụ</h3>
+            <p class="lesson-desc">
+              Thiết kế Pricing Table gồm 3 khối, làm nổi bật gói Pro ở giữa bằng
+              selector :nth-child và đổ bóng nổi 3D khi hover.
+            </p>
+            <span class="action-text">Xem kết quả &rarr;</span>
+          </a>
+        </li>
+
+        <li class="exercise-item">
+          <a
+            href="./ex4-blog-post/blog-post.html"
+            class="exercise-card"
+          >
+            <span class="lesson-number">Bài 04</span>
+            <h3 class="lesson-title">Blog Post</h3>
+            <p class="lesson-desc">
+              Tùy chỉnh văn bản cực ngầu với chữ cái đầu to (Drop cap), đổi màu
+              chữ khi bôi đen (::selection) và các bộ chọn nâng cao khác.
+            </p>
+            <span class="action-text">Xem kết quả &rarr;</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="back-navigation">
+        <a
+          href="../index.html"
+          class="btn-back"
+        >
+          &larr; Quay lại danh sách Lesson
+        </a>
+      </div>
+    </div>
   </body>
 </html>

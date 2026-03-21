@@ -1,0 +1,173 @@
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: #f4f7f6;
+  background-image: radial-gradient(
+    circle at top right,
+    #e0eafc 0%,
+    #cfdef3 100%
+  );
+  color: #333;
+  line-height: 1.6;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.portfolio-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.portfolio-header h1 {
+  font-size: 3.6rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+}
+
+.portfolio-header p {
+  font-size: 1.6rem;
+  color: #555;
+  font-weight: 500;
+}
+
+.exercise-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.exercise-item {
+  flex: 1 1 calc(33.333% - 30px);
+  min-width: 300px;
+  display: flex;
+}
+
+.exercise-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffffd9;
+  padding: 35px 30px;
+  border-radius: 16px;
+  text-decoration: none;
+
+  border: 1px solid #ffffff;
+  box-shadow: 0 10px 30px #0000000a;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.exercise-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f05123, #ff7e5f, #feb47b);
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: all 0.4s ease;
+}
+
+.lesson-number {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #a0aab5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.lesson-title {
+  font-size: 2.2rem;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  transition: color 0.3s ease;
+}
+
+.lesson-desc {
+  font-size: 1.45rem;
+  color: #666;
+  flex-grow: 1;
+  margin-bottom: 30px;
+}
+
+.action-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #6c757d;
+  background-color: #f1f3f5;
+  padding: 10px 20px;
+  border-radius: 30px;
+  width: max-content;
+  transition: all 0.3s ease;
+}
+
+.exercise-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(240, 81, 35, 0.15);
+  background: rgba(255, 255, 255, 1);
+}
+
+.exercise-card:hover::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.exercise-card:hover .lesson-title {
+  color: #f05123;
+}
+
+.exercise-card:hover .lesson-number {
+  background: linear-gradient(45deg, #f05123, #ff7e5f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.exercise-card:hover .action-text {
+  background: linear-gradient(90deg, #f05123, #ff7e5f);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(240, 81, 35, 0.4);
+  transform: translateX(5px);
+}
+
+.back-navigation {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.btn-back {
+  display: inline-block;
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: #6c757d;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  color: #f05123;
+  background-color: #ffffff;
+  box-shadow: 0 8px 25px rgba(240, 81, 35, 0.15);
+  transform: translateY(-3px);
+}

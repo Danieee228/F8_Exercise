@@ -6,35 +6,113 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <title>Lesson 6 - Flexbox & Dàn trang</title>
+
     <link
       rel="stylesheet"
-      href="./css/reset.css"
+      href="../assets/css/reset.css"
     />
     <link
       rel="stylesheet"
-      href="./css/main.css"
+      href="../assets/css/base.css"
     />
-    <title>Flex</title>
+    <link
+      rel="stylesheet"
+      href="../assets/css/index.css"
+    />
   </head>
   <body>
-    <div class="menu">
-      <ul class="menu-list">
-      <li>
-        <a href="./ex1-cv-flex/cv-flex.html">CV Flex</a>
-      </li>
-      <li>
-        <a href="./ex2-pricing-flex/pricing-flex.html">Pricing Flex</a>
-      </li>
-      <li>
-        <a href="./ex3-product-list/product-list.html">Product List</a>
-      </li>
-      <li>
-        <a href="./ex4-register-layout/register-layout.html">Register Layout</a>
-      </li>
-      <li>
-        <a href="./ex5-froggy/froggy.html">Froggy</a>
-      </li>
-    </ul>
+    <div class="portfolio-container">
+      <div class="portfolio-header">
+        <h1>Lesson 06: Flexbox</h1>
+        <p>Làm chủ Flexbox qua các bài tập dàn trang thực tế</p>
+      </div>
+
+      <ul class="exercise-list">
+        <li class="exercise-item">
+          <a
+            href="./ex1-cv-flex/cv-flex.html"
+            class="exercise-card"
+          >
+            <span class="lesson-number">Bài 01</span>
+            <h3 class="lesson-title">CV Flexbox</h3>
+            <p class="lesson-desc">
+              Dàn lại bố cục CV bằng Flexbox với sidebar chứa thông tin cá nhân
+              và cột phải chứa kinh nghiệm làm việc.
+            </p>
+            <span class="action-text">Xem kết quả &rarr;</span>
+          </a>
+        </li>
+
+        <li class="exercise-item">
+          <a
+            href="./ex2-pricing-flex/pricing-flex.html"
+            class="exercise-card"
+          >
+            <span class="lesson-number">Bài 02</span>
+            <h3 class="lesson-title">Pricing Table</h3>
+            <p class="lesson-desc">
+              Dùng Flexbox đặt 3 khối bảng giá ngang hàng, tự động căn giữa nội
+              dung và đồng đều kích thước.
+            </p>
+            <span class="action-text">Xem kết quả &rarr;</span>
+          </a>
+        </li>
+
+        <li class="exercise-item">
+          <a
+            href="./ex3-product-list/product-list.html"
+            class="exercise-card"
+          >
+            <span class="lesson-number">Bài 03</span>
+            <h3 class="lesson-title">Product List</h3>
+            <p class="lesson-desc">
+              Tạo layout danh sách sản phẩm linh hoạt dạng lưới, tự động rớt
+              dòng khi thu nhỏ màn hình.
+            </p>
+            <span class="action-text">Xem kết quả &rarr;</span>
+          </a>
+        </li>
+
+        <li class="exercise-item">
+          <a
+            href="./ex4-register-layout/register-layout.html"
+            class="exercise-card"
+          >
+            <span class="lesson-number">Bài 04</span>
+            <h3 class="lesson-title">Login / Register Layout</h3>
+            <p class="lesson-desc">
+              Xây dựng bố cục chia đôi màn hình, căn giữa form đăng ký theo cả 2
+              chiều ngang và dọc.
+            </p>
+            <span class="action-text">Xem kết quả &rarr;</span>
+          </a>
+        </li>
+
+        <li class="exercise-item">
+          <a
+            href="./ex5-froggy/froggy.html"
+            class="exercise-card"
+          >
+            <span class="lesson-number">Bài 05</span>
+            <h3 class="lesson-title">Froggy Pro</h3>
+            <p class="lesson-desc">
+              Thực hành tư duy Flexbox nâng cao qua trò chơi Froggy Pro, rèn
+              luyện cách định vị các phần tử.
+            </p>
+            <span class="action-text">Xem kết quả &rarr;</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="back-navigation">
+        <a
+          href="../index.html"
+          class="btn-back"
+        >
+          &larr; Quay lại danh sách Lesson
+        </a>
+      </div>
     </div>
   </body>
 </html>

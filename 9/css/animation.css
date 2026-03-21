@@ -31,6 +31,7 @@
   25% {
     opacity: 1;
     transform: translateY(-50px) scale(1);
+    animation-timing-function: ease-in;
   }
   50% {
     opacity: 1;
@@ -40,6 +41,7 @@
   75% {
     opacity: 1;
     transform: translateY(50px) scale(1);
+    animation-timing-function: ease-in;
   }
   100% {
     opacity: 0;

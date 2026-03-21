@@ -1,0 +1,23 @@
+body{
+  background-color:antiquewhite;
+}
+
+.wrapper {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
