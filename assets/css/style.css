@@ -26,7 +26,7 @@ body {
   font-size: 3.6rem;
   font-weight: 800;
   background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
   letter-spacing: -1px;
@@ -135,7 +135,7 @@ body {
 
 .exercise-card:hover .lesson-number {
   background: linear-gradient(45deg, #f05123, #ff7e5f);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
