@@ -295,10 +295,30 @@
             <div class="content">
               <div class="top-select">
                 <div class="select">
-                  <a href="#">
+                  <input
+                    type="checkbox"
+                    id="select-toggle"
+                    hidden
+                  />
+                  <label
+                    for="select-toggle"
+                    class="select-backdrop"
+                  ></label>
+                  <label
+                    for="select-toggle"
+                    class="select-filter"
+                  >
                     <p>Select Filter</p>
                     <i class="fa-solid fa-angle-down"></i>
-                  </a>
+                  </label>
+                  <ul class="select-list">
+                    <li class="select-item select-item--active">
+                      <a href="">Select Filter</a>
+                    </li>
+                    <li class="select-item"><a href="">By Price</a></li>
+                    <li class="select-item"><a href="">By Category</a></li>
+                    <li class="select-item"><a href="">By Date</a></li>
+                  </ul>
                 </div>
                 <div class="result">
                   <p>Showing 1–9 of 25 results</p>
