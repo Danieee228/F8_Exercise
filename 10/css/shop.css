@@ -266,6 +266,11 @@ h1.heading {
   display: block;
   text-decoration: none;
   color: #242222b3;
+  transition: color ease-in-out 0.3s;
+}
+
+.shop-list a:hover {
+  color: var(--primary);
 }
 
 .product-list {
@@ -279,6 +284,11 @@ h1.heading {
   align-items: center;
   gap: 20px;
   text-decoration: none;
+  transition: color ease-in-out 0.3s;
+}
+
+.product-item a:hover .product-desc h6 {
+  color: var(--primary);
 }
 
 .img-product {
@@ -297,6 +307,7 @@ h1.heading {
   font-size: 1.8rem;
   color: #242222;
   font-weight: normal;
+  transition: color ease-in-out 0.3s;
 }
 
 .product-desc p {
@@ -308,7 +319,7 @@ h1.heading {
   flex: 1;
   display: flex;
   flex-direction: column;
-  
+
   gap: 60px;
 }
 
@@ -349,6 +360,10 @@ h1.heading {
   flex-direction: column;
 }
 
+.product-image-container {
+  overflow: hidden;
+}
+
 .product-image-container a {
   display: block;
 }
@@ -358,6 +373,11 @@ h1.heading {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  transition: transform ease-in-out 0.6s;
+}
+
+.single-product:hover .product-image {
+  transform: scale(1.1);
 }
 
 .product-description {
@@ -429,13 +449,13 @@ h1.heading {
   bottom: -14px;
 }
 
-.pagination{
+.pagination {
   display: flex;
   justify-content: center;
   gap: 12px;
 }
 
-.pagination-btn{
+.pagination-btn {
   width: 45px;
   height: 45px;
   text-decoration: none;
@@ -445,7 +465,13 @@ h1.heading {
   font-size: 2rem;
   background-color: var(--primary);
   color: var(--white);
+  transition: background-color ease-in-out 0.3s;
 }
+
+.pagination-btn:hover {
+  background-color: var(--secondary);
+}
+
 /* Start Footer */
 .footer {
   background-color: black;
