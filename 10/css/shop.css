@@ -17,6 +17,8 @@
 .container {
   width: 1170px;
   max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
   min-height: 100px;
   margin: 0 auto;
 }
@@ -707,8 +709,8 @@ h1.heading {
     max-width: 970px;
     width: 100%;
   }
-  .nav > li > a {
-    padding: 15px;
+  .nav > li > .menu-item-wrapper > a {
+    padding: 15px 10px;
   }
   .single-product {
     width: calc((100% - 30px) / 2);
@@ -810,13 +812,15 @@ h1.heading {
     cursor: pointer;
   }
 
-  .submenu {
+  .header .nav > li > .submenu {
     position: static;
-    display: none;
+    display: block;
     opacity: 1;
     visibility: visible;
     transform: none;
-    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
   }
 
   .submenu::before {
@@ -824,7 +828,8 @@ h1.heading {
   }
 
   .header .nav > li:has(input:checked) > .submenu {
-    display: block;
+    max-height: 350px;
+    transition: max-height 0.2s ease-in-out;
   }
   .main .inner {
     flex-direction: column-reverse;
@@ -863,4 +868,16 @@ h1.heading {
   .footer-apps {
     flex-direction: row;
   }
+}
+
+@media (max-width: 767.98px) {
+  .main-search-box input {
+    width: 100%;
+  }
+  .footer .inner {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 575.98px) {
 }
