@@ -45,13 +45,19 @@
 
 .nav {
   display: flex;
+  gap: 10px;
 }
 
 .nav li {
   position: relative;
 }
 
-.nav > li > a {
+.nav > li > .menu-item-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.nav > li > .menu-item-wrapper > a {
   display: inline-block;
   padding: 20px;
   text-decoration: none;
@@ -61,6 +67,14 @@
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 1.1px;
+}
+
+.nav > li > .menu-item-wrapper .submenu-toggle {
+  display: none;
+}
+
+.header .nav > li > a i {
+  display: none;
 }
 
 .nav li:hover .submenu {
@@ -186,6 +200,10 @@ label.action-btn {
   color: var(--white);
 }
 
+.hamburger-icon {
+  display: none;
+}
+
 h1.heading {
   font-size: 3.2rem;
 }
@@ -233,7 +251,6 @@ h1.heading {
 }
 
 .main-search-box input {
-  flex: 1;
   height: 45px;
   background-color: #eeeeee;
   border: none;
@@ -471,6 +488,8 @@ h1.heading {
   background-color: var(--primary);
   color: var(--white);
   border-radius: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
   text-decoration: none;
   line-height: 40px;
   text-align: center;
@@ -676,4 +695,172 @@ h1.heading {
 
 .footer-email button:hover {
   color: var(--primary);
+}
+
+@media (max-width: 1199.98px) {
+  .header {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  .container {
+    max-width: 970px;
+    width: 100%;
+  }
+  .nav > li > a {
+    padding: 15px;
+  }
+  .single-product {
+    width: calc((100% - 30px) / 2);
+  }
+  .footer-apps {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 750px;
+    width: 100%;
+  }
+
+  .header {
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 60px;
+  }
+
+  .hamburger-icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-flex;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    font-size: 2.8rem;
+    color: var(--white);
+  }
+
+  .menu-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    display: none;
+  }
+
+  .header .nav {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: #000000cc;
+    width: 100%;
+    z-index: 10;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      max-height 0.3s ease-in-out,
+      opacity 0.3s ease-in-out,
+      visibility 0s 0.3s;
+  }
+
+  #menu-checkbox:checked ~ .nav {
+    max-height: 60vh;
+    overflow-y: auto;
+    opacity: 1;
+    visibility: visible;
+    transition:
+      max-height 0.3s ease-in-out,
+      opacity 0.3s ease-in-out,
+      visibility 0s 0s;
+  }
+
+  #menu-checkbox:checked ~ .menu-backdrop {
+    display: block;
+  }
+  .header .nav {
+    gap: 0;
+  }
+  .header .nav > li {
+    width: 100%;
+    border-bottom: 1px solid #ffffff26;
+  }
+  .nav > li > .menu-item-wrapper {
+    width: 100%;
+    align-items: stretch;
+  }
+  .nav > li > .menu-item-wrapper a {
+    flex: 1;
+    display: block;
+    padding: 15px 20px;
+  }
+
+  .nav > li > .menu-item-wrapper .submenu-toggle {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #ffffff26;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+  }
+
+  .submenu {
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    width: 100%;
+  }
+
+  .submenu::before {
+    display: none;
+  }
+
+  .header .nav > li:has(input:checked) > .submenu {
+    display: block;
+  }
+  .main .inner {
+    flex-direction: column-reverse;
+  }
+  .footer .inner {
+    flex-wrap: wrap;
+    gap: 0;
+    row-gap: 60px;
+  }
+
+  .footer-menu {
+    display: contents;
+  }
+
+  .footer-logo {
+    flex: 0 0 50%;
+    padding-right: 30px;
+  }
+
+  .footer-menu .menu-list {
+    flex: none;
+  }
+
+  .footer-menu .menu-list:nth-child(1),
+  .footer-menu .menu-list:nth-child(2) {
+    flex: 0 0 25%;
+  }
+
+  .footer-menu .menu-list:nth-child(3) {
+    flex: 0 0 50%;
+  }
+
+  .footer-email {
+    flex: 0 0 50%;
+  }
+  .footer-apps {
+    flex-direction: row;
+  }
 }

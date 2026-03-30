@@ -60,10 +60,38 @@
                   class="logo"
                 />
               </a>
+              <input
+                type="checkbox"
+                id="menu-checkbox"
+                hidden
+              />
+              <label
+                for="menu-checkbox"
+                class="menu-backdrop"
+              ></label>
+              <label
+                for="menu-checkbox"
+                class="hamburger-icon"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </label>
               <!-- Navigation -->
               <ul class="nav">
                 <li>
-                  <a href="">Home</a>
+                  <div class="menu-item-wrapper">
+                    <a href="/">Home</a>
+                    <input
+                      type="checkbox"
+                      id="sub-home"
+                      hidden
+                    />
+                    <label
+                      for="sub-home"
+                      class="submenu-toggle"
+                    >
+                      <i class="fa-solid fa-angle-down"></i>
+                    </label>
+                  </div>
                   <ul class="submenu">
                     <li>
                       <a href="#"><span>Home version one</span></a>
@@ -77,7 +105,21 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="">COURSES</a>
+                  <div class="menu-item-wrapper">
+                    <a href="courses.html">COURSES</a>
+                    <input
+                      type="checkbox"
+                      id="sub-courses"
+                      hidden
+                    />
+
+                    <label
+                      for="sub-courses"
+                      class="submenu-toggle"
+                    >
+                      <i class="fa-solid fa-angle-down"></i>
+                    </label>
+                  </div>
                   <ul class="submenu">
                     <li>
                       <a href="#"><span>Course 2 Column</span></a>
@@ -91,7 +133,21 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="">EVENTS</a>
+                  <div class="menu-item-wrapper">
+                    <a href="courses.html">EVENTS</a>
+                    <input
+                      type="checkbox"
+                      id="sub-events"
+                      hidden
+                    />
+
+                    <label
+                      for="sub-events"
+                      class="submenu-toggle"
+                    >
+                      <i class="fa-solid fa-angle-down"></i>
+                    </label>
+                  </div>
                   <ul class="submenu">
                     <li>
                       <a href="#"><span>Event List</span></a>
@@ -105,7 +161,21 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="">Pages</a>
+                  <div class="menu-item-wrapper">
+                    <a href="teachers.html">PAGES</a>
+                    <input
+                      type="checkbox"
+                      id="sub-pages"
+                      hidden
+                    />
+
+                    <label
+                      for="sub-pages"
+                      class="submenu-toggle"
+                    >
+                      <i class="fa-solid fa-angle-down"></i>
+                    </label>
+                  </div>
                   <ul class="submenu">
                     <li>
                       <a href="#"><span>Our teachers</span></a>
@@ -131,7 +201,20 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="">PORTFOLIO</a>
+                  <div class="menu-item-wrapper">
+                    <a href="/">PORTFOLIO</a>
+                    <input
+                      type="checkbox"
+                      id="sub-portfolio"
+                      hidden
+                    />
+                    <label
+                      for="sub-portfolio"
+                      class="submenu-toggle"
+                    >
+                      <i class="fa-solid fa-angle-down"></i>
+                    </label>
+                  </div>
                   <ul class="submenu">
                     <li>
                       <a href="#"><span>portfolio 2 column</span></a>
@@ -145,7 +228,20 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="">BLOG</a>
+                  <div class="menu-item-wrapper">
+                    <a href="/">BLOG</a>
+                    <input
+                      type="checkbox"
+                      id="sub-blog"
+                      hidden
+                    />
+                    <label
+                      for="sub-blog"
+                      class="submenu-toggle"
+                    >
+                      <i class="fa-solid fa-angle-down"></i>
+                    </label>
+                  </div>
                   <ul class="submenu">
                     <li>
                       <a href="#"><span>Blog</span></a>
@@ -156,7 +252,20 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="">SHOP</a>
+                  <div class="menu-item-wrapper">
+                    <a href="/">SHOP</a>
+                    <input
+                      type="checkbox"
+                      id="sub-shop"
+                      hidden
+                    />
+                    <label
+                      for="sub-shop"
+                      class="submenu-toggle"
+                    >
+                      <i class="fa-solid fa-angle-down"></i>
+                    </label>
+                  </div>
                   <ul class="submenu">
                     <li>
                       <a href="#"><span>Shop Page</span></a>
@@ -167,7 +276,9 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="">Contact</a>
+                  <div class="menu-item-wrapper">
+                    <a href="/">CONTACT</a>
+                  </div>
                 </li>
               </ul>
               <div class="action-wrapper">
@@ -195,6 +306,7 @@
                 </button>
               </div>
             </div>
+
             <div class="header-content">
               <h1 class="heading">Shop</h1>
               <ul class="breadcrumb">
