@@ -1,0 +1,9 @@
+.item {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 30px;
+  font-size: 3rem;
+  font-weight: 600;
+  background-color: peachpuff;
+}
