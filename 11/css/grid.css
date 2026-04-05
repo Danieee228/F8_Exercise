@@ -22,7 +22,12 @@
 }
 
 .col {
-  flex: 1 0;
+  flex: 1 0 auto;
+}
+
+.row > [class*="col-"],
+.row[class*="row-col-"] > * {
+  flex: 0 0 auto;
 }
 
 .col,
@@ -33,7 +38,7 @@
 }
 
 .row > [class*="col-"] {
-  flex-basis: calc(100% / var(--columns) * var(--col-span));
+  width: calc(100% / var(--columns) * var(--col-span));
 }
 
 .row > [class*="offset-"] {
@@ -41,7 +46,7 @@
 }
 
 .row[class*="row-col-"] > * {
-  flex-basis: calc(100% / var(--row-cols-span));
+  width: calc(100% / var(--row-cols-span));
 }
 
 /* Offset */
@@ -218,6 +223,19 @@
   --col-span: 12;
 }
 
+/* display */
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
 /* xl */
 @media (max-width: 1399.98px) {
   .container {
@@ -359,6 +377,19 @@
   .g-xl-5,
   .gy-xl-5 {
     --spacer-y: calc(var(--spacer) * 3);
+  }
+
+  /* display */
+  .d-xl-none {
+    display: none !important;
+  }
+
+  .d-xl-block {
+    display: block !important;
+  }
+
+  .d-xl-flex {
+    display: flex !important;
   }
 }
 
@@ -504,6 +535,19 @@
   .gy-lg-5 {
     --spacer-y: calc(var(--spacer) * 3);
   }
+
+  /* display */
+  .d-lg-none {
+    display: none !important;
+  }
+
+  .d-lg-block {
+    display: block !important;
+  }
+
+  .d-lg-flex {
+    display: flex !important;
+  }
 }
 
 /* md */
@@ -647,6 +691,18 @@
   .gy-md-5 {
     --spacer-y: calc(var(--spacer) * 3);
   }
+  /* display */
+  .d-md-none {
+    display: none !important;
+  }
+
+  .d-md-block {
+    display: block !important;
+  }
+
+  .d-md-flex {
+    display: flex !important;
+  }
 }
 
 /* sm */
@@ -789,6 +845,19 @@
   .gy-sm-5 {
     --spacer-y: calc(var(--spacer) * 3);
   }
+
+  /* display */
+  .d-sm-none {
+    display: none !important;
+  }
+
+  .d-sm-block {
+    display: block !important;
+  }
+
+  .d-sm-flex {
+    display: flex !important;
+  }
 }
 
 /* xs */
@@ -930,5 +999,18 @@
   .g-xs-5,
   .gy-xs-5 {
     --spacer-y: calc(var(--spacer) * 3);
+  }
+
+  /* display */
+  .d-xs-none {
+    display: none !important;
+  }
+
+  .d-xs-block {
+    display: block !important;
+  }
+
+  .d-xs-flex {
+    display: flex !important;
   }
 }
