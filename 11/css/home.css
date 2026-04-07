@@ -1,0 +1,22 @@
+.hero-wrapper {
+  background-color: #f8ebc9;
+  padding: 20px 0;
+}
+
+.header .row {
+  align-items: center;
+}
+
+.header .logo {
+  display: inline-flex;
+}
+
+.logo__img {
+  object-fit: cover;
+}
+
+.nav-header__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
