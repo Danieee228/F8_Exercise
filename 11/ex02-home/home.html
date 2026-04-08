@@ -23,13 +23,36 @@
       href="../css/home.css"
     />
     <title>Document</title>
+    <!-- Font -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="hero-wrapper">
       <header class="header">
         <div class="container">
           <div class="row">
-            <div class="col-3">
+            <div class="col-1">
               <a
                 href="!#"
                 class="logo"
@@ -41,43 +64,48 @@
                 />
               </a>
             </div>
-            <div class="col-6">
+            <div class="col-6 offset-2">
               <nav class="nav-header">
                 <ul class="nav-header__list">
                   <li class="nav-header__item">
                     <a
-                      href="!#"
+                      href="#!"
                       class="nav-header__link"
-                      >Home</a
                     >
+                      Home
+                      <i class="fa-solid fa-angle-down"></i>
+                    </a>
                   </li>
                   <li class="nav-header__item">
                     <a
-                      href="!#"
+                      href="#!"
                       class="nav-header__link"
-                      >About</a
-                    >
+                      >About
+                      <i class="fa-solid fa-angle-down"></i>
+                    </a>
                   </li>
                   <li class="nav-header__item">
                     <a
-                      href="!#"
+                      href="#!"
                       class="nav-header__link"
-                      >Practice Areas</a
-                    >
+                      >Practice Areas
+                      <i class="fa-solid fa-angle-down"></i>
+                    </a>
                   </li>
                   <li class="nav-header__item">
                     <a
-                      href="!#"
+                      href="#!"
                       class="nav-header__link"
                       >Attorneys</a
                     >
                   </li>
                   <li class="nav-header__item">
                     <a
-                      href="!#"
+                      href="#!"
                       class="nav-header__link"
-                      >Page</a
-                    >
+                      >Page
+                      <i class="fa-solid fa-angle-down"></i>
+                    </a>
                   </li>
                 </ul>
               </nav>
@@ -88,13 +116,50 @@
                   href="tel:000123456789"
                   class="phone-contact__link"
                 >
-                  Call: (000) 123 456 789
+                  Call:
+                  <span class="phone-contact__link--bold"
+                    >(000) 123 456 789</span
+                  >
                 </a>
               </div>
             </div>
           </div>
         </div>
       </header>
+      <section class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="hero__subtitle">#1 Law Firm in New York</h3>
+              <h1 class="hero__title">
+                Where People Meets Personalized Support.
+              </h1>
+              <p class="hero__desc">
+                Where every injury is personal. We are a different kind of law
+                firm. Let our small, passionate group of trial lawyers fight for
+                your rights!
+              </p>
+              <a
+                href="#!"
+                class="btn btn--medium"
+              >
+                Get a Consultations</a
+              >
+            </div>
+            <div class="col-5 offset-1">
+              <div class="hero-media">
+                <div class="hero-media__bg-green"></div>
+                <div class="hero-media__bg-yellow"></div>
+                <img
+                  src="../img/img-lawyer.png"
+                  alt="Our Lawyers"
+                  class="hero-media__img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
