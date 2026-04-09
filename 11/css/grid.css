@@ -26,7 +26,7 @@
 }
 
 .row > [class*="col-"],
-.row[class*="row-col-"] > * {
+.row[class*="row-cols-"] > * {
   flex: 0 0 auto;
 }
 
@@ -45,7 +45,7 @@
   margin-left: calc(100% / var(--columns) * var(--col-offset));
 }
 
-.row[class*="row-col-"] > * {
+.row[class*="row-cols-"] > * {
   width: calc(100% / var(--row-cols-span));
 }
 

@@ -1,11 +1,12 @@
 :root {
   --heading-font: "Roboto Slab", serif;
-  --black: #000;
+  --black: #0E1412;
   --white: #fff;
   --primary: #f8ebc9;
   --secondary: #fd6038;
   --tertiary: #017848;
   --accent: #fed464;
+  --gray: #586863;
 }
 
 * {
@@ -23,6 +24,7 @@ body {
   line-height: 3rem;
   font-family: "Manrope", sans-serif;
   font-weight: 400;
+  color: var(--black);
 }
 
 h1,
