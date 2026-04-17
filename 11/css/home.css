@@ -30,20 +30,24 @@
   justify-content: space-around;
 }
 
-.nav-header__item {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
 .nav-header__item i {
   font-size: 0.8rem;
   translate: 0 -2px;
+  transition: transform 0.3s ease;
 }
 
 .nav-header__link {
   display: block;
   padding: 4px 8px;
+  transition: color 0.3s ease;
+}
+
+.nav-header__link:hover {
+  color: var(--secondary);
+}
+
+.nav-header__link:hover i {
+  transform: rotate(180deg);
 }
 
 .phone-contact {
@@ -121,6 +125,28 @@
   color: var(--white);
   font-weight: 600;
   height: 60px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease-in-out;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  scale: 0;
+  z-index: -1;
+  background-color: var(--white);
+  transition: scale 0.3s ease-in-out;
+}
+
+.btn:hover::after {
+  scale: 1;
+}
+
+.btn:hover {
+  color: var(--secondary);
 }
 
 .btn--large {
@@ -133,6 +159,27 @@
 
 .btn--small {
   width: 166px;
+}
+
+.btn--secondary {
+  background-color: var(--white);
+  color: var(--secondary);
+}
+
+.btn--secondary::after {
+  background-color: var(--secondary);
+}
+
+.btn--secondary:hover {
+  color: var(--white);
+}
+
+.btn--tertiary::after {
+  background-color: var(--tertiary);
+}
+
+.btn--tertiary:hover {
+  color: var(--white);
 }
 
 .hero-media {
@@ -159,6 +206,31 @@
 
   background-color: var(--accent);
   z-index: 2;
+}
+
+.hero-media__play {
+  position: absolute;
+  left: 0;
+  top: 0;
+  translate: -50% -50%;
+  width: 22.17%; /* 100px */
+  height: 22.83%; /* 100px */
+  background-color: var(--black);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  z-index: 4;
+}
+
+.hero-media__text-circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  translate: -50% -50%;
+  z-index: 4;
+  animation: rotate 10s linear infinite;
 }
 
 .hero-media__img {
@@ -285,6 +357,11 @@
 
 .services-card {
   position: relative;
+  overflow: hidden;
+}
+
+.services-card:hover .services-card__img {
+  transform: scale(1.1);
 }
 
 .services-card__img {
@@ -292,6 +369,7 @@
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  transition: transform 0.6s ease-in-out;
 }
 
 .services-card__btn {
@@ -405,12 +483,17 @@
   gap: 18px;
 }
 
+.member-card:hover .member-media__img {
+  transform: scale(1.1);
+}
+
 .members-list {
   margin-bottom: 55px;
 }
 
 .member-media {
   position: relative;
+  overflow: hidden;
 }
 
 .member-media__img {
@@ -419,6 +502,7 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: top;
+  transition: transform 0.6s ease-in-out;
 }
 
 .member-media__link {
@@ -512,6 +596,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.testimonials-nav__link:hover {
+  background-color: var(--secondary);
 }
 
 .testimonials-nav i {
@@ -524,6 +613,14 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  transition:
+    box-shadow 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0px 20px 70px 0px #0e141212;
+  border-color: transparent;
 }
 
 .testimonials-avatar {
@@ -581,6 +678,15 @@
   background-color: var(--black);
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.testimonials-dot--active {
+  background-color: var(--secondary);
+}
+
+.testimonials-dot:hover {
+  background-color: var(--secondary);
 }
 
 .faq {
@@ -600,8 +706,16 @@
   gap: 30px;
 }
 
+.faq-tab--active {
+  color: var(--secondary);
+}
+
 .accordion-item {
   border-bottom: 1px solid #dbe1e3;
+  transition:
+    margin 0.4s ease-in-out,
+    box-shadow 0.4s ease-in-out,
+    border-radius 0.4s ease-in-out;
 }
 
 .accordion-item__header {
@@ -624,6 +738,22 @@
   justify-content: center;
   align-items: center;
   color: var(--white);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.accordion-item__icon i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-item__input:checked ~ .accordion-item__header .accordion-item__icon {
+  background-color: var(--secondary);
+}
+
+.accordion-item__input:checked
+  ~ .accordion-item__header
+  .accordion-item__icon
+  i {
+  transform: rotate(180deg);
 }
 
 .accordion-item__title {
@@ -636,11 +766,13 @@
 .accordion-item__content {
   display: grid;
   grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s ease-in-out;
 }
 
 .accordion-item__inner {
   overflow: hidden;
-  padding-bottom: 0;
+  padding: 0 30px;
+  transition: padding 0.4s ease-in-out;
 }
 
 .accordion-item__input:checked ~ .accordion-item__content {
@@ -654,10 +786,17 @@
 }
 
 .accordion-item:has(.accordion-item__input:checked) {
-  background-color: #ffffff;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
+  box-shadow: 0px 20px 70px 0px #0e141212;
+  background-color: var(--white);
+  border-top: none;
   border-bottom: none;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.accordion-item:has(.accordion-item__input:checked)
+  + .accordion-item:not(:has(.accordion-item__input:checked)) {
+  border-top: 1px solid #dbe1e3;
 }
 
 .accordion-item__desc {
@@ -677,12 +816,22 @@
   height: 100%;
 }
 
+.blog-card__media-link {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.blog-card:hover .blog-card__img {
+  scale: 1.1;
+}
+
 .blog-card__img {
   display: block;
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  margin-bottom: 20px;
+  transition: scale 0.6s ease-in-out;
 }
 
 .blog-card__media {
@@ -723,8 +872,15 @@
 }
 
 .blog-card__link {
+  align-self: flex-start;
+  padding-right: 12px;
   margin-top: auto;
   font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.blog-card:hover .blog-card__link {
+  color: var(--secondary);
 }
 
 .cta {
@@ -821,4 +977,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.social-links__item i {
+  color: var(--black);
+  transition: color 0.4s ease-in-out;
+}
+
+.social-links__item:hover {
+  background-color: var(--secondary);
+}
+
+.social-links__item:hover i {
+  color: var(--white);
+}
+
+.social-links__item--active {
+  background-color: var(--secondary);
+}
+
+.social-links__item--active i {
+  color: var(--white);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
