@@ -2,6 +2,13 @@
   .subtitle {
     margin-bottom: 5px;
   }
+  .header .row {
+    justify-content: space-between;
+  }
+
+  .hamburger-icon i {
+    font-size: 2.8rem;
+  }
 
   .hero-wrapper {
     padding-bottom: 30px;
