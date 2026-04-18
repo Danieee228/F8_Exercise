@@ -1,9 +1,9 @@
 .hero-wrapper {
-  min-height: 859px;
   display: flex;
   flex-direction: column;
   background-color: var(--primary);
   overflow: hidden;
+  padding-bottom: 150px;
 }
 
 .header {
@@ -64,6 +64,7 @@
   flex: 1;
   display: flex;
   align-items: center;
+  padding-top:150px
 }
 
 .hero .row > .col-6:first-child {

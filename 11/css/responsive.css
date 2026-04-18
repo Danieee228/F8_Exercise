@@ -3,6 +3,19 @@
     margin-bottom: 5px;
   }
 
+  .hero-wrapper {
+    padding-bottom: 30px;
+  }
+
+  .hero {
+    padding-bottom: 150px;
+    padding-top: 50px;
+  }
+
+  .hero-media {
+    margin: 120px auto 0 auto;
+  }
+
   .about {
     padding: 30px 0;
   }
@@ -27,6 +40,10 @@
     padding: 50px 0;
   }
 
+  .services {
+    margin-bottom: 50px;
+  }
+
   .services-top {
     margin-bottom: 40px;
   }
@@ -37,6 +54,26 @@
 
   .services-list {
     margin-bottom: 40px;
+  }
+
+  .feature-block__content {
+    margin-bottom: 30px;
+  }
+
+  .feature-block + .feature-block {
+    margin-top: 50px;
+  }
+
+  .reverse-md {
+    flex-direction: column-reverse;
+  }
+
+  .feature-block__list {
+    margin-top: 20px;
+  }
+
+  .feature-block__desc {
+    margin-bottom: 20px;
   }
 
   .team {
@@ -67,39 +104,52 @@
     padding: 50px 0;
   }
 
-  .testimonials{
+  .testimonials {
     padding-bottom: 50px;
   }
 
-  .testimonials-top{
+  .testimonials-top {
     margin-bottom: 40px;
   }
 
-  .testimonials-nav{
+  .testimonials-nav {
     display: none;
   }
-  
-  .testimonials-dots{
+
+  .testimonials-dots {
     margin-top: 40px;
   }
 
-  .faq{
-    padding-bottom:  50px;
+  .faq {
+    padding-bottom: 50px;
   }
 
-  .faq-title{
+  .faq-title {
     margin-bottom: 10px;
   }
 
-  .faq-top{
+  .faq-top {
     margin-bottom: 40px;
   }
 
-  .blogs-top{
+  .blogs-top {
     margin-bottom: 40px;
   }
 
-  .footer-top{
+  .blogs-intro {
+    flex: 1;
+  }
+
+  .blogs-desc {
+    max-width: none;
+  }
+
+  .blogs-bottom {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .footer-top {
     padding-top: 30px;
     padding-bottom: 20px;
   }
