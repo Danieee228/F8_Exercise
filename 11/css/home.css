@@ -1,12 +1,9 @@
-.container {
-  max-width: 1140px;
-}
-
 .hero-wrapper {
   min-height: 859px;
   display: flex;
   flex-direction: column;
   background-color: var(--primary);
+  overflow: hidden;
 }
 
 .header {
@@ -27,7 +24,7 @@
 
 .nav-header__list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .nav-header__item i {
@@ -55,6 +52,7 @@
   justify-content: flex-end;
   height: 32px;
   line-height: 32px;
+  white-space: nowrap;
 }
 
 .phone-contact__link--bold {
@@ -213,8 +211,8 @@
   left: 0;
   top: 0;
   translate: -50% -50%;
-  width: 22.17%; /* 100px */
-  height: 22.83%; /* 100px */
+  width: 100px;
+  height: 100px;
   background-color: var(--black);
   border-radius: 50%;
   display: flex;
@@ -256,9 +254,9 @@
 }
 
 .about {
-  min-height: 770px;
   padding: 100px 0;
   background-color: var(--black);
+  overflow: hidden;
 }
 
 .about .row > .col-6:first-child {
@@ -377,6 +375,8 @@
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+  width: calc(100% - 40px);
+  /* max-width: 330px; */
 }
 
 .btn--white {
@@ -386,6 +386,10 @@
 
 .services-bottom {
   text-align: center;
+}
+
+.features {
+  overflow: hidden;
 }
 
 .features .row {
@@ -465,7 +469,6 @@
 }
 
 .team {
-  min-height: 1477px;
   padding: 100px 0;
   background-color: var(--black);
 }
@@ -536,7 +539,6 @@
 }
 
 .awards {
-  min-height: 628px;
   padding: 100px 0;
   background-color: var(--primary);
 }
@@ -569,7 +571,6 @@
 }
 
 .testimonials {
-  min-height: 845px;
   padding-bottom: 150px;
 }
 
@@ -690,7 +691,6 @@
 }
 
 .faq {
-  min-height: 652px;
   padding-bottom: 150px;
 }
 
@@ -884,7 +884,6 @@
 }
 
 .cta {
-  min-height: 494px;
   padding: 100px 0;
   background-color: var(--tertiary);
 }

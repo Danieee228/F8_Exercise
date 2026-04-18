@@ -536,6 +536,44 @@
     --spacer-y: calc(var(--spacer) * 3);
   }
 
+  /* Offset */
+  .offset-lg-0 {
+    --col-offset: 0;
+  }
+  .offset-lg-1 {
+    --col-offset: 1;
+  }
+  .offset-lg-2 {
+    --col-offset: 2;
+  }
+  .offset-lg-3 {
+    --col-offset: 3;
+  }
+  .offset-lg-4 {
+    --col-offset: 4;
+  }
+  .offset-lg-5 {
+    --col-offset: 5;
+  }
+  .offset-lg-6 {
+    --col-offset: 6;
+  }
+  .offset-lg-7 {
+    --col-offset: 7;
+  }
+  .offset-lg-8 {
+    --col-offset: 8;
+  }
+  .offset-lg-9 {
+    --col-offset: 9;
+  }
+  .offset-lg-10 {
+    --col-offset: 10;
+  }
+  .offset-lg-11 {
+    --col-offset: 11;
+  }
+
   /* display */
   .d-lg-none {
     display: none !important;
@@ -691,6 +729,44 @@
   .gy-md-5 {
     --spacer-y: calc(var(--spacer) * 3);
   }
+  /* Offset */
+  .offset-md-0 {
+    --col-offset: 0;
+  }
+  .offset-md-1 {
+    --col-offset: 1;
+  }
+  .offset-md-2 {
+    --col-offset: 2;
+  }
+  .offset-md-3 {
+    --col-offset: 3;
+  }
+  .offset-md-4 {
+    --col-offset: 4;
+  }
+  .offset-md-5 {
+    --col-offset: 5;
+  }
+  .offset-md-6 {
+    --col-offset: 6;
+  }
+  .offset-md-7 {
+    --col-offset: 7;
+  }
+  .offset-md-8 {
+    --col-offset: 8;
+  }
+  .offset-md-9 {
+    --col-offset: 9;
+  }
+  .offset-md-10 {
+    --col-offset: 10;
+  }
+  .offset-md-11 {
+    --col-offset: 11;
+  }
+
   /* display */
   .d-md-none {
     display: none !important;
@@ -846,6 +922,44 @@
     --spacer-y: calc(var(--spacer) * 3);
   }
 
+  /* Offset */
+  .offset-sm-0 {
+    --col-offset: 0;
+  }
+  .offset-sm-1 {
+    --col-offset: 1;
+  }
+  .offset-sm-2 {
+    --col-offset: 2;
+  }
+  .offset-sm-3 {
+    --col-offset: 3;
+  }
+  .offset-sm-4 {
+    --col-offset: 4;
+  }
+  .offset-sm-5 {
+    --col-offset: 5;
+  }
+  .offset-sm-6 {
+    --col-offset: 6;
+  }
+  .offset-sm-7 {
+    --col-offset: 7;
+  }
+  .offset-sm-8 {
+    --col-offset: 8;
+  }
+  .offset-sm-9 {
+    --col-offset: 9;
+  }
+  .offset-sm-10 {
+    --col-offset: 10;
+  }
+  .offset-sm-11 {
+    --col-offset: 11;
+  }
+
   /* display */
   .d-sm-none {
     display: none !important;
@@ -999,6 +1113,43 @@
   .g-xs-5,
   .gy-xs-5 {
     --spacer-y: calc(var(--spacer) * 3);
+  }
+  /* Offset */
+  .offset-xs-0 {
+    --col-offset: 0;
+  }
+  .offset-xs-1 {
+    --col-offset: 1;
+  }
+  .offset-xs-2 {
+    --col-offset: 2;
+  }
+  .offset-xs-3 {
+    --col-offset: 3;
+  }
+  .offset-xs-4 {
+    --col-offset: 4;
+  }
+  .offset-xs-5 {
+    --col-offset: 5;
+  }
+  .offset-xs-6 {
+    --col-offset: 6;
+  }
+  .offset-xs-7 {
+    --col-offset: 7;
+  }
+  .offset-xs-8 {
+    --col-offset: 8;
+  }
+  .offset-xs-9 {
+    --col-offset: 9;
+  }
+  .offset-xs-10 {
+    --col-offset: 10;
+  }
+  .offset-xs-11 {
+    --col-offset: 11;
   }
 
   /* display */

@@ -22,6 +22,10 @@
       rel="stylesheet"
       href="../css/home.css"
     />
+    <link
+      rel="stylesheet"
+      href="../css/responsive.css"
+    />
     <title>Document</title>
     <!-- Font -->
     <link
@@ -72,7 +76,7 @@
               </a>
             </div>
             <!-- Navigation -->
-            <div class="col-6 offset-2">
+            <div class="col-6 offset-2 col-lg-7 offset-lg-1">
               <nav class="nav-header">
                 <ul class="nav-header__list">
                   <li class="nav-header__item">
@@ -119,7 +123,7 @@
               </nav>
             </div>
             <!-- Phone Contact -->
-            <div class="col-3">
+            <div class="col-3 col-lg-3">
               <div class="phone-contact">
                 <a
                   href="tel:000123456789"
@@ -140,7 +144,7 @@
         <div class="container">
           <div class="row">
             <!-- Content Column -->
-            <div class="col-6">
+            <div class="col-6 col-md-12">
               <!-- Hero Content -->
               <h3 class="hero__subtitle subtitle subtitle--dark">
                 #1 Law Firm in New York
@@ -161,7 +165,7 @@
               >
             </div>
             <!-- Media Column -->
-            <div class="col-5 offset-1">
+            <div class="col-5 offset-1 col-md-12">
               <div class="hero-media">
                 <div class="hero-media__bg-green"></div>
                 <div class="hero-media__bg-yellow"></div>
@@ -195,7 +199,7 @@
         <div class="row">
           <!-- Image Column -->
           <div
-            class="col-6"
+            class="col-6 d-md-none"
             data-aos="fade-right"
           >
             <div class="about__media">
@@ -212,10 +216,12 @@
             </div>
           </div>
           <!-- Content Column -->
-          <div class="col-5 offset-1">
+          <div class="col-5 offset-1 col-md-12 offset-md-0">
             <div class="about__content">
-              <h3 class="subtitle subtitle--orange">#About Us</h3>
-              <h2 class="title title--white">
+              <h3 class="about__subtitle subtitle subtitle--orange">
+                #About Us
+              </h3>
+              <h2 class="about__title title title--white">
                 Get the Guidance, Support, and Counsel
               </h2>
               <p class="about__desc desc desc--gray">
@@ -258,7 +264,7 @@
           <!-- Top Section -->
           <div class="services-top">
             <h3 class="subtitle subtitle--gray">#Services</h3>
-            <h2 class="title">Our Practice Areas</h2>
+            <h2 class="services-title title">Our Practice Areas</h2>
             <p class="desc desc--center desc--gray">
               Our Law Office provides a professional experience for all our
               clients, helping them navigate their legal rights.
@@ -266,7 +272,7 @@
           </div>
           <!-- Services List -->
           <div class="services-list">
-            <div class="row row-cols-3 g-3">
+            <div class="row row-cols-3 g-3 row-cols-md-1">
               <!-- Service 1 -->
               <div class="col">
                 <div class="services-card">
@@ -386,11 +392,13 @@
                     src="../img/img-features-1.png"
                     alt="Features"
                     class="features__img"
+                    loading="lazy"
                   />
                   <img
                     src="../img/img-decord-3.png"
                     alt="Decord"
                     class="media__decord--style-3"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -461,11 +469,13 @@
                     src="../img/img-features-2.png"
                     alt="Features"
                     class="features__img"
+                    loading="lazy"
                   />
                   <img
                     src="../img/img-decord-4.png"
                     alt="Decord"
                     class="media__decord--style-4"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -480,7 +490,7 @@
         <!-- Team  Top -->
         <div class="team-top">
           <h3 class="subtitle subtitle--orange">#Team</h3>
-          <h2 class="title title--white">Meet With Lawyers</h2>
+          <h2 class="team-title title title--white">Meet With Lawyers</h2>
           <p class="desc desc--center desc--gray">
             Our team of experienced team more than $150 Million in Settlements
             and Judgments for Our Clients
@@ -488,7 +498,7 @@
         </div>
         <!-- Members List -->
         <div class="members-list">
-          <div class="row row-cols-3 gy-3">
+          <div class="row row-cols-3 gy-3 row-cols-md-1">
             <!-- Member 1 -->
             <div class="col">
               <div class="member-card">
@@ -652,7 +662,7 @@
         </div>
         <!-- Awards List -->
         <div class="awards-list">
-          <div class="row row-cols-4 g-3">
+          <div class="row row-cols-4 g-3 row-cols-md-1">
             <div class="col">
               <div class="awards-card">
                 <img
@@ -722,7 +732,7 @@
             </nav>
           </div>
           <!-- Testimonials List -->
-          <div class="row row-cols-3">
+          <div class="row row-cols-3 row-cols-md-1 gy-md-3">
             <div class="col">
               <!-- Testimonial 1 -->
               <div class="testimonial-card">
@@ -806,11 +816,11 @@
       <section class="faq">
         <div class="container">
           <div class="row">
-            <div class="col-8 offset-2">
+            <div class="col-8 offset-2 col-md-12 offset-md-0">
               <!-- FAQ Top -->
               <div class="faq-top">
                 <h3 class="subtitle subtitle--gray">#FAQ</h3>
-                <h2 class="title">Frequently Asked Questions</h2>
+                <h2 class="faq-title title">Frequently Asked Questions</h2>
                 <div class="faq-tabs">
                   <button
                     type="button"
@@ -952,7 +962,7 @@
             >
           </div>
           <!-- Blogs List -->
-          <div class="row row-cols-3">
+          <div class="row row-cols-3 row-cols-md-1 gy-md-3">
             <!-- Blog 1 -->
             <div class="col">
               <div class="blog-card">
@@ -1112,7 +1122,7 @@
     <footer class="footer">
       <div class="container">
         <!-- Footer Top -->
-        <div class="footer-top row">
+        <div class="footer-top row row-cols-md-1 g-md-3">
           <!-- Footer Justice -->
           <div class="col-2">
             <h4 class="footer__heading">Justice</h4>
@@ -1199,40 +1209,44 @@
           </div>
         </div>
         <!-- Footer Bottom -->
-        <div class="footer-bottom">
+        <div class="footer-bottom row row-cols-md-1 gy-md-3">
           <!-- Footer Logo and Copyright -->
-          <div class="footer-bottom__left">
-            <img
-              src="../img/img-logo-white.png"
-              alt="Justice Logo"
-              class="footer-logo"
-            />
-            <p class="footer__copyright">
-              Copyright © 2022 UI HUT All Rights Reserved
-            </p>
+          <div class="col">
+            <div class="footer-bottom__left">
+              <img
+                src="../img/img-logo-white.png"
+                alt="Justice Logo"
+                class="footer-logo"
+              />
+              <p class="footer__copyright">
+                Copyright © 2022 UI HUT All Rights Reserved
+              </p>
+            </div>
           </div>
           <!-- Social Links -->
-          <div class="social-links">
-            <a
-              href="#!"
-              class="social-links__item social-links__item--active"
-              ><i class="fa-brands fa-square-facebook"></i
-            ></a>
-            <a
-              href="#!"
-              class="social-links__item"
-              ><i class="fa-brands fa-square-linkedin"></i
-            ></a>
-            <a
-              href="#!"
-              class="social-links__item"
-              ><i class="fa-brands fa-square-twitter"></i
-            ></a>
-            <a
-              href="#!"
-              class="social-links__item"
-              ><i class="fa-brands fa-square-instagram"></i
-            ></a>
+          <div class="col">
+            <div class="social-links">
+              <a
+                href="#!"
+                class="social-links__item social-links__item--active"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+              <a
+                href="#!"
+                class="social-links__item"
+                ><i class="fa-brands fa-square-linkedin"></i
+              ></a>
+              <a
+                href="#!"
+                class="social-links__item"
+                ><i class="fa-brands fa-square-twitter"></i
+              ></a>
+              <a
+                href="#!"
+                class="social-links__item"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>

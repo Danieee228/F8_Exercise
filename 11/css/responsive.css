@@ -1,0 +1,106 @@
+@media (max-width: 991.98px) {
+  .subtitle {
+    margin-bottom: 5px;
+  }
+
+  .about {
+    padding: 30px 0;
+  }
+
+  .about__subtitle {
+    margin-bottom: 10px;
+  }
+
+  .about__title {
+    margin-bottom: 15px;
+  }
+
+  .about__desc {
+    margin-bottom: 15px;
+  }
+
+  .stats {
+    margin-bottom: 30px;
+  }
+
+  .core-wrapper {
+    padding: 50px 0;
+  }
+
+  .services-top {
+    margin-bottom: 40px;
+  }
+
+  .services-title {
+    margin-bottom: 10px;
+  }
+
+  .services-list {
+    margin-bottom: 40px;
+  }
+
+  .team {
+    padding: 50px 0;
+  }
+
+  .team-top {
+    margin-bottom: 40px;
+  }
+
+  .team-title {
+    margin-bottom: 15px;
+  }
+
+  .members-list {
+    margin-bottom: 40px;
+  }
+
+  .awards {
+    padding: 50px 0;
+  }
+
+  .awards-top {
+    margin-bottom: 40px;
+  }
+
+  .bottom-wrapper {
+    padding: 50px 0;
+  }
+
+  .testimonials{
+    padding-bottom: 50px;
+  }
+
+  .testimonials-top{
+    margin-bottom: 40px;
+  }
+
+  .testimonials-nav{
+    display: none;
+  }
+  
+  .testimonials-dots{
+    margin-top: 40px;
+  }
+
+  .faq{
+    padding-bottom:  50px;
+  }
+
+  .faq-title{
+    margin-bottom: 10px;
+  }
+
+  .faq-top{
+    margin-bottom: 40px;
+  }
+
+  .blogs-top{
+    margin-bottom: 40px;
+  }
+
+  .footer-top{
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
