@@ -1,3 +1,7 @@
+.row{
+  margin-top: 20px;
+}
+
 .item {
   display: flex;
   justify-content: center;
@@ -6,5 +10,4 @@
   font-size: 3rem;
   font-weight: 600;
   background-color: peachpuff;
-  margin-top: 20px;
 }

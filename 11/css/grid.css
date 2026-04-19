@@ -325,7 +325,7 @@
 
   .g-xl-1,
   .gx-xl-1 {
-    --spacer-x: var(--spacer) * 0.25;
+    --spacer-x: calc(var(--spacer) * 0.25);
   }
 
   .g-xl-2,
@@ -356,7 +356,7 @@
 
   .g-xl-1,
   .gy-xl-1 {
-    --spacer-y: var(--spacer) * 0.25;
+    --spacer-y: calc(var(--spacer) * 0.25);
   }
 
   .g-xl-2,
@@ -366,7 +366,7 @@
 
   .g-xl-3,
   .gy-xl-3 {
-    --spacer-y: var(--spacer);
+    --spacer-y: calc(var(--spacer) * 1);
   }
 
   .g-xl-4,
@@ -482,7 +482,7 @@
 
   .g-lg-1,
   .gx-lg-1 {
-    --spacer-x: var(--spacer) * 0.25;
+    --spacer-x: calc(var(--spacer) * 0.25);
   }
 
   .g-lg-2,
@@ -492,7 +492,7 @@
 
   .g-lg-3,
   .gx-lg-3 {
-    --spacer-x: var(--spacer);
+    --spacer-x: calc(var(--spacer) * 1);
   }
 
   .g-lg-4,
@@ -513,7 +513,7 @@
 
   .g-lg-1,
   .gy-lg-1 {
-    --spacer-y: var(--spacer) * 0.25;
+    --spacer-y: calc(var(--spacer) * 0.25);
   }
 
   .g-lg-2,
@@ -523,7 +523,7 @@
 
   .g-lg-3,
   .gy-lg-3 {
-    --spacer-y: var(--spacer);
+    --spacer-y: calc(var(--spacer) * 1);
   }
 
   .g-lg-4,
@@ -707,7 +707,7 @@
 
   .g-md-1,
   .gy-md-1 {
-    --spacer-y: var(--spacer) * 0.25;
+    --spacer-y: calc(var(--spacer) * 0.25);
   }
 
   .g-md-2,
@@ -717,7 +717,7 @@
 
   .g-md-3,
   .gy-md-3 {
-    --spacer-y: var(--spacer);
+    --spacer-y: calc(var(--spacer) * 1);
   }
 
   .g-md-4,
@@ -878,7 +878,7 @@
 
   .g-sm-3,
   .gx-sm-3 {
-    --spacer-x: var(--spacer);
+    --spacer-x: calc(var(--spacer) * 1);
   }
 
   .g-sm-4,
@@ -899,7 +899,7 @@
 
   .g-sm-1,
   .gy-sm-1 {
-    --spacer-y: var(--spacer) * 0.25;
+    --spacer-y: calc(var(--spacer) * 0.25);
   }
 
   .g-sm-2,
@@ -909,7 +909,7 @@
 
   .g-sm-3,
   .gy-sm-3 {
-    --spacer-y: var(--spacer);
+    --spacer-y: calc(var(--spacer) * 1);
   }
 
   .g-sm-4,
@@ -1061,7 +1061,7 @@
 
   .g-xs-1,
   .gx-xs-1 {
-    --spacer-x: var(--spacer) * 0.25;
+    --spacer-x: calc(var(--spacer) * 0.25);
   }
 
   .g-xs-2,
@@ -1071,7 +1071,7 @@
 
   .g-xs-3,
   .gx-xs-3 {
-    --spacer-x: var(--spacer);
+    --spacer-x: calc(var(--spacer) * 1);
   }
 
   .g-xs-4,
@@ -1092,7 +1092,7 @@
 
   .g-xs-1,
   .gy-xs-1 {
-    --spacer-y: var(--spacer) * 0.25;
+    --spacer-y: calc(var(--spacer) * 0.25);
   }
 
   .g-xs-2,
@@ -1102,7 +1102,7 @@
 
   .g-xs-3,
   .gy-xs-3 {
-    --spacer-y: var(--spacer);
+    --spacer-y: calc(var(--spacer) * 1);
   }
 
   .g-xs-4,
