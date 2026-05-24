@@ -12,6 +12,7 @@ const searchInput = document.querySelector(".search-input");
 let searchQuery = "";
 let todoTasks = [];
 let currentTab = "active";
+let editIndex = null;
 
 function openModal() {
   addTaskModal.classList.add("show");
@@ -25,7 +26,12 @@ function closeModal() {
   addTaskModal.classList.remove("show");
 }
 
-addBtn.addEventListener("click", openModal);
+addBtn.addEventListener("click", function () {
+  editIndex = null;
+  todoForm.reset();
+  openModal();
+});
+
 closeBtn.addEventListener("click", closeModal);
 cancelBtn.addEventListener("click", closeModal);
 
@@ -35,13 +41,21 @@ addTaskModal.addEventListener("click", function (event) {
   }
 });
 
-// Create new task
+// Handle form submission
 todoForm.addEventListener("submit", function (event) {
   event.preventDefault();
   const formData = new FormData(todoForm);
   const newTask = Object.fromEntries(formData);
-  newTask.isCompleted = false;
-  todoTasks.unshift(newTask);
+  if (editIndex === null) {
+    // New task
+    newTask.isCompleted = false;
+    todoTasks.unshift(newTask);
+  } else {
+    // Edit existing task
+    newTask.isCompleted = todoTasks[editIndex].isCompleted;
+    todoTasks[editIndex] = newTask;
+    editIndex = null;
+  }
   todoForm.reset();
   closeModal();
   renderTasks();
@@ -51,14 +65,30 @@ todoForm.addEventListener("submit", function (event) {
 taskGrid.addEventListener("click", function (event) {
   const completeBtn = event.target.closest(".js-dropdown-complete");
   const deleteBtn = event.target.closest(".js-dropdown-delete");
+  const editBtn = event.target.closest(".js-dropdown-edit");
+  // Toggle complete status
   if (completeBtn) {
     const taskIndex = completeBtn.dataset.index;
     todoTasks[taskIndex].isCompleted = !todoTasks[taskIndex].isCompleted;
     renderTasks();
-  } else if (deleteBtn) {
+  }
+  // Delete task
+  else if (deleteBtn) {
     const taskIndex = deleteBtn.dataset.index;
     todoTasks.splice(taskIndex, 1);
     renderTasks();
+  }
+  // Edit task
+  else if (editBtn) {
+    editIndex = editBtn.dataset.index;
+    const task = todoTasks[editIndex];
+    for (let key in task) {
+      const input = todoForm.querySelector(`[name="${key}"]`);
+      if (input) {
+        input.value = task[key];
+      }
+    }
+    openModal();
   }
 });
 
@@ -104,7 +134,7 @@ function renderTasks() {
             <button class="task-menu">
               <i class="fa-solid fa-ellipsis fa-icon"></i>
               <div class="dropdown-menu">
-                <div class="dropdown-item">
+                <div class="dropdown-item js-dropdown-edit" data-index="${originalIndex}">
                   <i class="fa-solid fa-pen-to-square fa-icon"></i>
                   Edit
                 </div>
