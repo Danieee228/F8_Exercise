@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 40px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.check-all-container {
+  background-color: #ffffff;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.master-control {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.master-control input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.master-control label {
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.checked-count {
+  font-size: 14px;
+  color: #666;
+  font-weight: normal;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #eee;
+  margin-bottom: 16px;
+}
+
+.slave-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.row:hover {
+  background-color: #f9f9f9;
+}
+
+.row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.row label {
+  cursor: pointer;
+  width: 100%;
+}
