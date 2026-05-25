@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Tabs Component</title>
+    <link
+      rel="stylesheet"
+      href="../css/tabs.css"
+    />
+  </head>
+  <body>
+    <div class="tabs-container js-tabs-container">
+      <div class="tabs-header">
+        <button
+          class="tab-item active js-tab-btn"
+          data-target="content1"
+        >
+          Tab 1
+        </button>
+        <button
+          class="tab-item js-tab-btn"
+          data-target="content2"
+        >
+          Tab 2
+        </button>
+        <button
+          class="tab-item js-tab-btn"
+          data-target="content3"
+        >
+          Tab 3
+        </button>
+      </div>
+
+      <div class="tabs-body">
+        <div
+          id="content1"
+          class="tab-content active js-tab-content"
+        >
+          Tab 1
+        </div>
+        <div
+          id="content2"
+          class="tab-content js-tab-content"
+        >
+          Tab 2
+        </div>
+        <div
+          id="content3"
+          class="tab-content js-tab-content"
+        >
+          Tab 3
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/tabs.js"></script>
+  </body>
+</html>
