@@ -5,13 +5,25 @@ function setupTabs(containerSelector) {
   const storageKey = "activeTab_" + containerSelector;
   const tabButtons = container.querySelectorAll(".js-tab-btn");
   const tabContents = container.querySelectorAll(".js-tab-content");
+
+  //Handle clear active class
+  function clearAllActive() {
+    tabButtons.forEach((btn) => btn.classList.remove(ACTIVE_CLASS));
+    tabContents.forEach((content) => content.classList.remove(ACTIVE_CLASS));
+  }
+
+  // Handle activate tab
+  function activateTab(btn, content) {
+    clearAllActive();
+    btn.classList.add(ACTIVE_CLASS);
+    content.classList.add(ACTIVE_CLASS);
+  }
   // Load active tab from localStorage
   const savedActiveTab = localStorage.getItem(storageKey);
   if (!savedActiveTab) {
     // If no saved tab, activate the first one by default
     if (tabButtons.length > 0 && tabContents.length > 0) {
-      tabButtons[0].classList.add(ACTIVE_CLASS);
-      tabContents[0].classList.add(ACTIVE_CLASS);
+      activateTab(tabButtons[0], tabContents[0]);
     }
   } else {
     const targetButton = container.querySelector(
@@ -21,16 +33,10 @@ function setupTabs(containerSelector) {
     if (!targetButton || !targetContent) {
       // If saved tab is not found, activate the first one by default
       if (tabButtons.length > 0 && tabContents.length > 0) {
-        tabButtons[0].classList.add(ACTIVE_CLASS);
-        tabContents[0].classList.add(ACTIVE_CLASS);
+        activateTab(tabButtons[0], tabContents[0]);
       }
     } else {
-      // Remove active class from all buttons and contents
-      tabButtons.forEach((btn) => btn.classList.remove(ACTIVE_CLASS));
-      tabContents.forEach((content) => content.classList.remove(ACTIVE_CLASS));
-      // Add active class to saved button and content
-      targetButton.classList.add(ACTIVE_CLASS);
-      targetContent.classList.add(ACTIVE_CLASS);
+      activateTab(targetButton, targetContent);
     }
   }
 
@@ -40,12 +46,8 @@ function setupTabs(containerSelector) {
       const targetId = event.target.dataset.target;
       const targetContent = container.querySelector(`#${targetId}`);
       if (!targetContent) return;
-      // Remove active class from all buttons and contents
-      tabButtons.forEach((btn) => btn.classList.remove(ACTIVE_CLASS));
-      tabContents.forEach((content) => content.classList.remove(ACTIVE_CLASS));
       // Add active class to clicked button and content
-      event.target.classList.add(ACTIVE_CLASS);
-      targetContent.classList.add(ACTIVE_CLASS);
+      activateTab(event.target, targetContent);
       // Save active tab to localStorage
       localStorage.setItem(storageKey, targetId);
     }
