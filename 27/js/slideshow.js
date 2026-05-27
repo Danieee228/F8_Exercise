@@ -9,6 +9,7 @@ function slideShow(containerSelector) {
   const pagination = container.querySelector(".js-pagination");
   let totalSlides = slides.length;
   let currentIndex = 1;
+  let oldRealIndex = 0;
   if (totalSlides === 0) return;
   if (totalSlides === 1) {
     prevBtn.style.display = "none";
@@ -72,7 +73,7 @@ function slideShow(containerSelector) {
   // Handle transition end for infinite effect
   track.addEventListener("transitionend", function () {
     isAnimating = false;
-    function resetTransition() {  
+    function resetTransition() {
       track.style.transition = "none";
       track.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
@@ -83,6 +84,17 @@ function slideShow(containerSelector) {
     if (currentIndex === totalSlides + 1) {
       currentIndex = 1;
       resetTransition();
+    }
+    const currentRealIndex = currentIndex - 1;
+    if (oldRealIndex !== currentRealIndex) {
+      const slideChangeEvent = new CustomEvent("slideshow:change", {
+        detail: {
+          old: slides[oldRealIndex],
+          current: slides[currentRealIndex],
+        },
+      });
+      document.dispatchEvent(slideChangeEvent);
+      oldRealIndex = currentRealIndex;
     }
   });
 
