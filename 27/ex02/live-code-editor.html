@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Live Code Editor</title>
+    <link
+      rel="stylesheet"
+      href="../css/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/live-code-editor.css"
+    />
+  </head>
+  <body>
+    <div class="editor-container">
+      <div class="panel code-panel">
+        <textarea
+          class="js-code-input"
+          placeholder="Gõ HTML/CSS vào đây..."
+        ></textarea>
+      </div>
+
+      <div class="panel preview-panel">
+        <iframe class="js-preview-frame"></iframe>
+      </div>
+    </div>
+
+    <ul class="context-menu js-context-menu">
+      <li class="menu-item js-menu-clear">Xóa code</li>
+    </ul>
+
+    <script src="../js/live-code-editor.js"></script>
+  </body>
+</html>
