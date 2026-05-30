@@ -119,3 +119,7 @@ function slideShow(containerSelector) {
 }
 
 slideShow(".slideshow-container");
+document.addEventListener("slideshow:change", function (event) {
+  console.log("old:", event.detail.old);
+  console.log("current:", event.detail.current);
+});
