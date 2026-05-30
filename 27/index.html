@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Day 27 - Custom Event & DOM Nâng cao</title>
+
+    <link
+      rel="stylesheet"
+      href="../assets/css/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/css/base.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/css/style.css"
+    />
+  </head>
+  <body>
+    <div class="portfolio-container">
+      <div class="portfolio-header">
+        <h1>Day 27: Custom Event & DOM Nâng cao</h1>
+        <p>
+          Thực hành dispatch custom event với transitionend, xây dựng Live Code
+          Editor và ứng dụng quẹt thẻ Tender
+        </p>
+      </div>
+
+      <ul class="exercise-list">
+        <li class="exercise-item">
+          <a
+            href="../27/ex01/slideshow.html"
+            class="exercise-card"
+          >
+            <span class="lesson-number">Bài 01</span>
+            <h3 class="lesson-title">Dispatch event khi slide change</h3>
+            <p class="lesson-desc">
+              Sử dụng sự kiện transitionend để theo dõi hiệu ứng, từ đó dispatch
+              một custom event mang tên "slideshow:change" chứa thông tin slide
+              cũ và mới.
+            </p>
+            <span class="action-text">Xem kết quả &rarr;</span>
+          </a>
+        </li>
+
+        <li class="exercise-item">
+          <a
+            href="../27/ex02/live-code-editor.html"
+            class="exercise-card"
+          >
+            <span class="lesson-number">Bài 02</span>
+            <h3 class="lesson-title">Live Preview Code Editor</h3>
+            <p class="lesson-desc">
+              Xây dựng editor chia cột với iframe cập nhật real-time. Bắt sự
+              kiện cảnh báo khi thoát trang, chặn context menu mặc định và tự
+              custom menu xóa code.
+            </p>
+            <span class="action-text">Xem kết quả &rarr;</span>
+          </a>
+        </li>
+
+        <li class="exercise-item">
+          <a
+            href="../27/ex03/tender.html"
+            class="exercise-card"
+          >
+            <span class="lesson-number">Bài 03</span>
+            <h3 class="lesson-title">Ứng dụng Tender</h3>
+            <p class="lesson-desc">
+              Giao diện full viewport quẹt thẻ tối ưu cho mobile bằng touch
+              events. Xử lý logic tính toán khoảng cách, góc nghiêng và đổ màu
+              gradient theo hướng kéo.
+            </p>
+            <span class="action-text">Xem kết quả &rarr;</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="back-navigation">
+        <a
+          href="../index.html"
+          class="btn-back"
+        >
+          &larr; Quay lại danh sách Lesson
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
