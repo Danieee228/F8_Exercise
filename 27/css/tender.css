@@ -1,0 +1,200 @@
+:root {
+  --bg-app: #f5f7fa;
+  --card-bg: #ffffff;
+  --color-nope: #fd5068;
+  --color-like: #1ce38f;
+  --text-light: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  background-color: var(--bg-app);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.tender-container {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.tender-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 96%;
+  height: 96%;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: grab;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  user-select: none;
+}
+
+.tender-card.dragging {
+  transition: none;
+  cursor: grabbing;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.1s ease;
+}
+
+.card-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+.card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px 20px;
+  color: var(--text-light);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.card-name {
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.card-age {
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.card-bio {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-top: 8px;
+  opacity: 0.9;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.tinder-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  padding: 10px 0 40px 0;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: var(--bg-app);
+  z-index: 10;
+}
+
+.tinder-btn {
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.2s ease;
+}
+
+.tinder-btn:active {
+  transform: scale(0.85);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.btn-large {
+  width: 75px;
+  height: 75px;
+}
+
+.nope {
+  font-size: 38px;
+  color: var(--color-nope);
+}
+.like {
+  font-size: 42px;
+  color: var(--color-like);
+}
+
+.empty-state {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.empty-text {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #aaa;
+}
+
+.btn-reset {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #111418;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-reset:active {
+  background-color: #ccc;
+}
