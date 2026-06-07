@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Spotify Clone - JS Practice</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../css/style.css"
+    />
+  </head>
+  <body>
+    <main class="player">
+      <section class="player__dashboard">
+        <header class="player__header">
+          <p class="player__heading">Đang phát từ Playlist</p>
+        </header>
+
+        <div class="player__cd">
+          <img
+            src="https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=500&auto=format&fit=crop"
+            alt="Album Art"
+            class="player__cd-thumb js-cd-thumb"
+          />
+        </div>
+
+        <div class="player__info">
+          <h2 class="player__title js-title">Chờ Đợi Có Đáng Sợ</h2>
+          <h3 class="player__artist js-artist">Andiez</h3>
+        </div>
+
+        <div class="player__progress">
+          <div class="player__time">
+            <span class="player__time-text js-current-time">0:00</span>
+            <span class="player__time-text js-duration">03:45</span>
+          </div>
+          <input
+            type="range"
+            value="0"
+            step="1"
+            min="0"
+            max="100"
+            class="player__progress-bar js-progress"
+          />
+        </div>
+
+        <div class="player__controls">
+          <button class="player__btn js-shuffle-btn">
+            <i class="fas fa-random"></i>
+          </button>
+
+          <button class="player__btn js-prev-btn">
+            <i class="fas fa-step-backward"></i>
+          </button>
+
+          <button class="player__btn player__btn--play js-play-btn">
+            <i class="fas fa-play player__icon-play"></i>
+            <i class="fas fa-pause player__icon-pause"></i>
+          </button>
+
+          <button class="player__btn js-next-btn">
+            <i class="fas fa-step-forward"></i>
+          </button>
+
+          <button class="player__btn js-repeat-btn">
+            <i class="fas fa-redo"></i>
+          </button>
+        </div>
+
+        <div class="player__volume-wrapper">
+          <div class="player__volume">
+            <i class="fas fa-volume-up player__volume-icon js-volume-icon"></i>
+            <input
+              type="range"
+              value="100"
+              step="1"
+              min="0"
+              max="100"
+              class="player__volume-bar js-volume"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="player__playlist js-playlist"></section>
+      <audio id="audio"></audio>
+    </main>
+    <script src="../js/music-player.js"></script>
+  </body>
+</html>
