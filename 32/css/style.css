@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Consolas, "Courier New", monospace;
+  background-color: #1e1e1e;
+  color: #cccccc;
+  height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  width: 320px;
+  background-color: #252526;
+  border-right: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 10px 15px;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #999999;
+  text-transform: uppercase;
+}
+
+.tree-container {
+  overflow-y: auto;
+  flex: 1;
+  padding-top: 5px;
+}
+
+.tree-container,
+.tree-container ul {
+  list-style-type: none;
+}
+
+.tree-container ul {
+  padding-left: 20px;
+  display: none;
+}
+
+.tree-container ul.open {
+  display: block;
+}
+
+.tree-label {
+  padding: 4px 15px;
+  cursor: pointer;
+  display: block;
+  user-select: none;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.tree-label:hover {
+  background-color: #2a2d2e;
+}
+
+.tree-label.highlight {
+  background-color: #37373d;
+  color: #ffffff;
+}
+
+.context-menu {
+  position: absolute;
+  background-color: #252526;
+  border: 1px solid #454545;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 5px 0;
+  min-width: 150px;
+  z-index: 1000;
+  display: none;
+}
+
+.context-menu.show {
+  display: block;
+}
+
+.menu-item {
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.menu-item:hover {
+  background-color: #094771;
+  color: #ffffff;
+}
+
+.menu-item.delete:hover {
+  background-color: #d03838;
+}

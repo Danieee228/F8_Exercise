@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Tree Folder UI - VS Code Style</title>
+    <link
+      rel="stylesheet"
+      href="../css/style.css"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-header">EXPLORER</div>
+
+      <ul
+        id="tree-root"
+        class="tree-container"
+      ></ul>
+    </div>
+
+    <div
+      id="context-menu"
+      class="context-menu"
+    >
+      <div
+        class="menu-item"
+        data-action="rename"
+      >
+        Rename
+      </div>
+      <div
+        class="menu-item delete"
+        data-action="delete"
+      >
+        Delete
+      </div>
+    </div>
+
+    <script src="../js/ex1.js"></script>
+  </body>
+</html>
