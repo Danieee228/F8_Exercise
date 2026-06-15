@@ -13,44 +13,6 @@
     <app-modal heading="Modal 1">
       <p>This is Modal 1</p>
     </app-modal>
-    <template id="app-modal-tpl">
-      <style>
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-        .modal {
-          position: fixed;
-          inset: 0;
-          background-color: rgba(0, 0, 0, 0.6);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
-        }
-        .inner {
-          min-width: 250px;
-          padding: 20px;
-          background-color: #fff;
-          border-radius: 10px;
-        }
-      </style>
-      <div class="modal">
-        <div class="inner">
-          <div class="header">
-            <h1 id="heading">Modal</h1>
-          </div>
-          <div class="content">
-            <slot></slot>
-          </div>
-          <div class="footer">
-            <button id="close-btn">Cancel</button>
-            <button>Confirm</button>
-          </div>
-        </div>
-      </div>
-    </template>
     <script
       src="../js/web-component.js"
       type="module"
